@@ -1,11 +1,13 @@
 package org.example.calendar;
 
+import org.example.timeslot.Busy;
 import org.example.timeslot.TimeSlot;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Calendar {
+public abstract class Calendar {
     private List<TimeSlot> timeSlots;
     private String earliestTime;
     private String latestTime;

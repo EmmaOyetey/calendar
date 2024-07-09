@@ -4,13 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b2f4646-77ef-418e-b5d3-06d8968c3299" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="0b2f4646-77ef-418e-b5d3-06d8968c3299" name="Changes" comment="Renamed classes to Busy and Available. Added utilities packages with commandLine class and Manager package with AddMeeting and TimeSlotFinder classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Emma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Pablo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Sam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/UserCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/AdjustWorkingDayTimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utilities/CalendarUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utilities/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calendar/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/manager/AddMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/AddMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/manager/FreeTimeSlotFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/FreeTimeSlotFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utilities/CommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utilities/CommandLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,12 +46,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/emmaf/nology/Projects/calendar/calendar/src/main/java/org/example/Main.java"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="calendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,17 +82,28 @@
       <option name="presentableId" value="Default" />
       <updated>1720511452829</updated>
     </task>
+    <task id="LOCAL-00001" summary="Project set up and timeslot package created with; enum class T^imeSlot for the status of the slot - either 'available' or 'busy'. abstract class for a Timeslot and concrete classes for Meeting and Available.">
+      <option name="closed" value="true" />
+      <created>1720514470248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720514470248</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Renamed classes to Busy and Available. Added utilities packages with commandLine class and Manager package with AddMeeting and TimeSlotFinder classes">
+      <option name="closed" value="true" />
+      <created>1720519093620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720519093620</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project set up and timeslot package created with; enum class T^imeSlot for the status of the slot - either 'available' or 'busy'. abstract class for a Timeslot and concrete classes for Meeting and Available." />
+    <MESSAGE value="Renamed classes to Busy and Available. Added utilities packages with commandLine class and Manager package with AddMeeting and TimeSlotFinder classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed classes to Busy and Available. Added utilities packages with commandLine class and Manager package with AddMeeting and TimeSlotFinder classes" />
   </component>
 </project>
