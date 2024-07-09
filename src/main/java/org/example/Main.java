@@ -20,6 +20,7 @@ public class Main {
 
         commandLine.displayWelcomePrompt();
         String name = inputHandler.nextLine();
+        commandLine.displayMenuPrompt(name);
 
         Calendar userCalendar = new UserCalendar("08:00", "18:00", name, new Date());
 

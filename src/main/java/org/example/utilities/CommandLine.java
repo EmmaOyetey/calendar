@@ -6,8 +6,12 @@ public class CommandLine {
         System.out.println("Welcome to MeetUp. Please enter your name: ");
     }
 
+    public void displayMenuPrompt(String name) {
+        System.out.println("Hi " + name + ", What would you like to do?");
+    }
+
     public void displayIdentifyOtherCalendarPrompt(String name) {
-        System.out.println("Hi " + name + ", Who would you like to meet with?");
+        System.out.println(name + ", Who would you like to meet with?");
     }
 
     public void displayIdentifyDatePrompt(String name) {
@@ -15,8 +19,9 @@ public class CommandLine {
     }
 
     public void displayAvailableSlots() {
-        System.out.println("Common available slots:");
+        System.out.println("The following time slots are available:");
     }
+
 
     public void displayMainMenu() {
         System.out.println("1. Add a meeting");
@@ -27,11 +32,11 @@ public class CommandLine {
     }
 
     public void displayMeetingDetailsPrompt() {
-        System.out.print("Enter the day of the meeting: ");
+        System.out.print("Enter the day of the meeting (DD): ");
     }
 
     public void displayMonthPrompt() {
-        System.out.print("Enter the month of the meeting: ");
+        System.out.print("Enter the month of the meeting (MM): ");
     }
 
     public void displayStartTimePrompt() {

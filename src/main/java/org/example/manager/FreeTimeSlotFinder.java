@@ -26,9 +26,20 @@ public class FreeTimeSlotFinder {
                 .filter(name -> !name.equals(calendar.getName()))
                 .collect(Collectors.toList());
 
-        otherNames.forEach(System.out::println);
+        // Display options with numbers
+        for (int i = 0; i < otherNames.size(); i++) {
+            System.out.println((i + 1) + ". " + otherNames.get(i));
+        }
 
-        String otherPersonName = inputHandler.nextLine();
+        // Get user's choice
+        int choice = inputHandler.nextInt() - 1;
+
+        if (choice < 0 || choice >= otherNames.size()) {
+            System.out.println("Invalid choice. Please try again.");
+            return;
+        }
+
+        String otherPersonName = otherNames.get(choice);
 
         Calendar otherCalendar = allCalendars.stream()
                 .filter(cal -> cal.getName().equalsIgnoreCase(otherPersonName))
