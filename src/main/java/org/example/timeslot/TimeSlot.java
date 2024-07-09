@@ -5,11 +5,11 @@ public abstract class TimeSlot {
     protected String endTime;
     protected TimeSlotStatus status;
 
-//    public TimeSlot(String startTime, String endTime, TimeSlotStatus status) {
-//        this.startTime = startTime;
-//        this.endTime = endTime;
-//        this.status = status;
-//    }
+    public TimeSlot(String startTime, String endTime, TimeSlotStatus status) {
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.status = status;
+    }
 
     public String getStartTime() {
         return startTime;
@@ -27,11 +27,11 @@ public abstract class TimeSlot {
         this.endTime = endTime;
     }
 
-    public org.example.timeslot.TimeSlotStatus getStatus() {
+    public TimeSlotStatus getStatus() {
         return status;
     }
 
-    public void setStatus(org.example.timeslot.TimeSlotStatus status) {
+    public void setStatus(TimeSlotStatus status) {
         this.status = status;
     }
 
