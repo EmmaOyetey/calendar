@@ -1,8 +1,8 @@
-#MeetUp Calendar
-Welcome to the MeetUp Calendar! 
-This Java-based application helps users manage their calendars, schedule meetings, adjust working hours, and find mutual free time slots with other users.
+# MeetUp Calendar
+**Welcome to the MeetUp Calendar! 
+This Java-based application helps users manage their calendars, schedule meetings, adjust working hours, and find mutual free time slots with other users.**
 
-**Table of Contents**
+### **Table of Contents**
 Overview
 Features
 Design Principles
@@ -15,15 +15,15 @@ Setup and Usage
 Project Structure
 Future Improvements
 
-**Overview**
+### **Overview**
 The MeetUp Calendar is designed to simplify calendar management for users. Users can add meetings to their calendars, adjust working hours, and find mutual free time slots with other users. The system leverages key Object-Oriented Programming (OOP) principles to ensure a modular, maintainable, and extensible codebase.
 
-**Features**
+### **Features**
 Add Meeting: Users can schedule a meeting by specifying the date, start time, and end time.
 Adjust Working Hours: Users can adjust their default working hours or specify different working hours for a particular day. *To come
 Find Free Time Slots: Users can find mutual free time slots with other users for a specified date.
 
-**Design Principles**
+### **Design Principles**
 Object-Oriented Programming
 This project employs OOP principles to create a well-structured and modular system. Key OOP principles used include:
 
@@ -42,7 +42,7 @@ This project employs OOP principles to create a well-structured and modular syst
   Command Line and Input Handling: Utility classes (CommandLine and InputHandler) encapsulate common functionality, making it easy to reuse and maintain.
 
 
-**Setup and Usage**
+### **Setup and Usage**
 ***Prerequisites***
 Java Development Kit (JDK) 8 or higher
 A Java IDE (e.g., IntelliJ IDEA, Eclipse)
@@ -59,7 +59,7 @@ If using Eclipse, right-click on the project and select Run As > Java Applicatio
 ***Usage***
 Run the Main class to start the application. Follow the on-screen prompts to add meetings, adjust working hours, and find free time slots with other users.
 
-*Project Structure*
+### Project Structure
 The project is organized into the following packages:
 
 org.example.calendar:
@@ -83,10 +83,10 @@ org.example.utilities:
 CalendarUtils
 CommandLine
 InputHandler
-Future Improvements
+
+#### Future Improvements
 User Authentication: Add a feature to authenticate users.
 Persistent Storage: Save calendar data to a file or database for persistence.
 Graphical User Interface (GUI): Develop a GUI for better user interaction.
 Conflict Resolution: Add functionality to handle and resolve scheduling conflicts.
-Conclusion
-The MeetUp Calendar Management System is a comprehensive application demonstrating the power of OOP principles in creating a modular and extensible codebase. By using abstract classes, enums, and utility classes, the project ensures high reusability and maintainability.
+
