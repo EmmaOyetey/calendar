@@ -1,18 +1,14 @@
 package org.example;
 
 import org.example.calendar.*;
-import org.example.calendar.AdjustWorkingDayTimes;
-import org.example.manager.FreeTimeSlotFinder;
 import org.example.manager.*;
 import org.example.utilities.CommandLine;
 import org.example.utilities.InputHandler;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         CommandLine commandLine = new CommandLine();
@@ -22,7 +18,23 @@ public class Main {
         String name = inputHandler.nextLine();
         commandLine.displayMenuPrompt(name);
 
-        Calendar userCalendar = new UserCalendar("08:00", "18:00", name, new Date());
+        LocalDateTime now = LocalDateTime.now();
+
+        Calendar userCalendar;
+        switch (name) {
+            case "Emma":
+                userCalendar = new Emma();
+                break;
+            case "Pablo":
+                userCalendar = new Pablo();
+                break;
+            case "Sam":
+                userCalendar = new Sam();
+                break;
+            default:
+                userCalendar = new UserCalendar("08:00", "18:00", name, now);
+                break;
+        }
 
         List<Calendar> allCalendars = new ArrayList<>();
         allCalendars.add(userCalendar);
@@ -38,18 +50,22 @@ public class Main {
 
             switch (choice) {
                 case 1:
+                    CheckDayAvailability checkAvailability = new CheckDayAvailability(userCalendar);
+                    checkAvailability.checkAvailability(commandLine, inputHandler);
+                    break;
+                case 2:
                     AddMeeting addMeeting = new AddMeeting(userCalendar);
                     addMeeting.promptAndAddMeeting(commandLine, inputHandler);
                     break;
-                case 2:
+                case 3:
                     AdjustWorkingDayTimes adjustTimes = new AdjustWorkingDayTimes(userCalendar);
                     adjustTimes.adjustTimes(commandLine, inputHandler);
                     break;
-                case 3:
+                case 4:
                     FreeTimeSlotFinder freeTimeSlotFinder = new FreeTimeSlotFinder(userCalendar, allCalendars);
                     freeTimeSlotFinder.findFreeTimeSlot(commandLine, inputHandler);
                     break;
-                case 4:
+                case 5:
                     running = false;
                     break;
                 default:
@@ -60,5 +76,4 @@ public class Main {
 
         inputHandler.close();
     }
-
 }
