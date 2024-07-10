@@ -2,7 +2,7 @@ package org.example.timeslot;
 
 import java.time.LocalDateTime;
 
-public abstract class TimeSlot {
+public class TimeSlot {
     protected LocalDateTime startTime;
     protected LocalDateTime endTime;
     protected TimeSlotStatus status;

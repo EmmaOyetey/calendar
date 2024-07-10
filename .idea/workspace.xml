@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b2f4646-77ef-418e-b5d3-06d8968c3299" name="Changes" comment="Adjustments to commandline prompts">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/CheckDayAvailability.java" afterDir="false" />
+    <list default="true" id="0b2f4646-77ef-418e-b5d3-06d8968c3299" name="Changes" comment="Code reviewed (date variable changed to localDateTime across all classes. &#10;Tested to ensure user can view their calendar meetings either on a specific day or all meetings.&#10;User now able to add meeting and receive message that it was added successfully. Does not yet check if a meeting already exists and if it is a valid meeting slot.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calendar/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Calendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calendar/Emma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Emma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calendar/Pablo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Pablo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calendar/Sam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/Sam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calendar/UserCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calendar/UserCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/manager/AddMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/AddMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/manager/AdjustWorkingDayTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/AdjustWorkingDayTimes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/manager/FreeTimeSlotFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/manager/FreeTimeSlotFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/timeslot/Available.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/timeslot/Available.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/timeslot/Busy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/timeslot/Busy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/timeslot/TimeSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/timeslot/TimeSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utilities/CommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utilities/CommandLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utilities/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utilities/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utilities/CalendarUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utilities/CalendarUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720525586070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Code reviewed (date variable changed to localDateTime across all classes. &#10;Tested to ensure user can view their calendar meetings either on a specific day or all meetings.&#10;User now able to add meeting and receive message that it was added successfully. Does not yet check if a meeting already exists and if it is a valid meeting slot.">
+      <option name="closed" value="true" />
+      <created>1720613849698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720613849698</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -126,7 +122,8 @@
     <MESSAGE value="Renamed classes to Busy and Available. Added utilities packages with commandLine class and Manager package with AddMeeting and TimeSlotFinder classes" />
     <MESSAGE value="Added additional utility classes inputHandler and calendarUtils . Converted Calender class to abstract and created concrete class userCalender along with calenders for 3 users, Emma, Sam and Pablo.&#10;Added or adjusted code to classes AddMeeting, AdjustWorkingDayTimes and FreeTimeSlotFinder classes in the manager package.&#10;Added calenderUtils to  calculate available time slots" />
     <MESSAGE value="Adjustments to commandline prompts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjustments to commandline prompts" />
+    <MESSAGE value="Code reviewed (date variable changed to localDateTime across all classes. &#10;Tested to ensure user can view their calendar meetings either on a specific day or all meetings.&#10;User now able to add meeting and receive message that it was added successfully. Does not yet check if a meeting already exists and if it is a valid meeting slot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code reviewed (date variable changed to localDateTime across all classes. &#10;Tested to ensure user can view their calendar meetings either on a specific day or all meetings.&#10;User now able to add meeting and receive message that it was added successfully. Does not yet check if a meeting already exists and if it is a valid meeting slot." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
