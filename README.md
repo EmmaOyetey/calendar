@@ -1,4 +1,4 @@
-#MeetUp Calendar#
+#MeetUp Calendar
 Welcome to the MeetUp Calendar! 
 This Java-based application helps users manage their calendars, schedule meetings, adjust working hours, and find mutual free time slots with other users.
 
