@@ -2,19 +2,6 @@
 **Welcome to the MeetUp Calendar! 
 This Java-based application helps users manage their calendars, schedule meetings, adjust working hours, and find mutual free time slots with other users.**
 
-### **Table of Contents**
-Overview
-Features
-Design Principles
-Object-Oriented Programming
-Abstract Classes
-Enums
-Reusability
-Interfaces
-Setup and Usage
-Project Structure
-Future Improvements
-
 ### **Overview**
 The MeetUp Calendar is designed to simplify calendar management for users. Users can add meetings to their calendars, adjust working hours, and find mutual free time slots with other users. The system leverages key Object-Oriented Programming (OOP) principles to ensure a modular, maintainable, and extensible codebase.
 
